@@ -1,0 +1,309 @@
+/* ========== RESET & GLOBAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #222;
+    transition: 0.3s;
+}
+
+.dark-mode {
+    background: #0f0f0f;
+    color: #e6e6e6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* ========== HEADER ========== */
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.dark-mode header {
+    background: #1b1b1b;
+    border-color: #333;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit;
+    transition: .2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #2a79ff;
+}
+
+/* Theme Button */
+.theme-btn {
+    background: #2a79ff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.theme-btn:hover {
+    background: #1b5bdb;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+    padding: 90px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    line-height: 1.3;
+}
+
+.highlight {
+    color: #2a79ff;
+}
+
+.cta-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 11px 21px;
+    border-radius: 7px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.primary {
+    background: #2a79ff;
+    color: white;
+}
+
+.primary:hover {
+    background: #1d5ee7;
+}
+
+.secondary {
+    background: #ddd;
+    color: #222;
+}
+
+.secondary:hover {
+    background: #ccc;
+}
+
+.dark-mode .secondary {
+    background: #333;
+    color: #fff;
+}
+
+.hero-image img {
+    width: 320px;
+    border-radius: 50%;
+    border: 4px solid #2a79ff;
+}
+
+/* ========== SKILLS SECTION ========== */
+.skills {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.skill-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 13px;
+    border: 1px solid #ddd;
+    transition: .3s;
+}
+
+.dark-mode .skill-item {
+    background: #1b1b1b;
+    border-color: #333;
+}
+
+.skill-item:hover {
+    transform: translateY(-8px);
+}
+
+.skill-icon {
+    font-size: 45px;
+    margin-bottom: 13px;
+}
+
+/* ========== ABOUT PAGE ========== */
+.about {
+    padding: 70px 0;
+}
+
+.about-content {
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    width: 320px;
+    border-radius: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+}
+
+table th,
+table td {
+    border: 1px solid #bbb;
+    padding: 10px;
+}
+
+table th {
+    background: #2a79ff;
+    color: white;
+}
+
+.dark-mode table th {
+    background: #114aae;
+}
+
+.experience .exp-item {
+    margin-top: 18px;
+    padding: 15px;
+    border-left: 4px solid #2a79ff;
+    background: #eee;
+    border-radius: 8px;
+}
+
+.dark-mode .exp-item {
+    background: #242424;
+}
+
+/* ========== PORTFOLIO PAGE ========== */
+.portfolio-item {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.portfolio-image img {
+    width: 340px;
+    border-radius: 12px;
+}
+
+.portfolio-tech .tech-tag {
+    background: #2a79ff;
+    color: white;
+    padding: 5px 11px;
+    border-radius: 6px;
+    margin-right: 6px;
+}
+
+/* ========== CONTACT PAGE ========== */
+.contact-content {
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 13px;
+    margin-bottom: 14px;
+}
+
+.contact-icon {
+    font-size: 28px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    border-radius: 7px;
+    border: 1px solid gray;
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 14px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    text-align: center;
+    padding: 28px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+.dark-mode footer {
+    border-color: #333;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 820px) {
+    nav ul {
+        gap: 10px;
+        font-size: 14px;
+    }
+    header .container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
